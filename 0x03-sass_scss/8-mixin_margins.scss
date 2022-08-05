@@ -1,0 +1,16 @@
+/*
+8. Margin mixin
+*/
+
+@mixin shared-properties($property) {
+    margin-left: $property;
+    margin-right: $property;
+}
+
+body {
+    @include shared-properties(10px);
+}
+
+div {
+    @include shared-properties(15px);
+}
